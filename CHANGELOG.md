@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Vercel deployment configuration (`vercel.json`) with a SPA rewrite to `index.html`, so client-side routes resolve on direct access and refresh.
 
 ## [0.2.0] - 2026-10-14
 
