@@ -1,0 +1,21 @@
+{
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "edit": "Edit",
+  "loading": "Loading...",
+  "error": "An error occurred",
+  "dev": "Dev",
+  "home": {
+    "title": "Overview",
+    "description": "Welcome to your personal hub. Choose a module below to get started."
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "General application settings and account preferences."
+  },
+  "workouts": {
+    "title": "Workouts Module",
+    "description": "Soon you will be able to log and track your gym and calisthenics workouts here."
+  }
+}

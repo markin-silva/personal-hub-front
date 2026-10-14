@@ -38,7 +38,7 @@ async function request<T>(
     throw new ApiError(response.status, errorData)
   }
 
-  // Tratamento para respostas sem corpo (ex: HTTP 204 No Content)
+  // Handle empty responses (e.g. HTTP 204 No Content)
   if (response.status === 204) {
     return {} as T
   }

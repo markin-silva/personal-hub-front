@@ -6,16 +6,16 @@ interface ProvidersProps {
 }
 
 export function Providers({ children }: ProvidersProps) {
-  // Criamos o QueryClient dentro do useState para evitar que ele seja reinicializado
-  // em possíveis re-renderizações acidentais do componente raiz.
+  // We instantiate QueryClient inside useState to prevent it from being recreated
+  // during accidental re-renders of the root component.
   const [queryClient] = useState(
     () =>
       new QueryClient({
         defaultOptions: {
           queries: {
-            staleTime: 1000 * 60 * 5, // Dados permanecem "frescos" por 5 minutos
-            retry: 1, // Tenta novamente apenas 1 vez em caso de falha de rede
-            refetchOnWindowFocus: false, // Desativa busca automática ao mudar de aba
+            staleTime: 1000 * 60 * 5, // Data remains "fresh" for 5 minutes
+            retry: 1, // Only retry once on network failure
+            refetchOnWindowFocus: false, // Disable automatic refetch when switching tabs
           },
         },
       }),

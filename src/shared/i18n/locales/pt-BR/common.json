@@ -1,0 +1,21 @@
+{
+  "save": "Salvar",
+  "cancel": "Cancelar",
+  "delete": "Excluir",
+  "edit": "Editar",
+  "loading": "Carregando...",
+  "error": "Ocorreu um erro",
+  "dev": "Dev",
+  "home": {
+    "title": "Visão Geral",
+    "description": "Bem-vindo ao seu centralizador pessoal. Escolha um módulo abaixo para começar."
+  },
+  "settings": {
+    "title": "Configurações",
+    "description": "Ajustes gerais do aplicativo e preferências de conta."
+  },
+  "workouts": {
+    "title": "Módulo de Treinos",
+    "description": "Em breve você poderá registrar e acompanhar suas séries de academia e calistenia aqui."
+  }
+}

@@ -1,7 +1,10 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import { Dumbbell, Settings, Home } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export function Layout() {
+  const { t } = useTranslation(['nav', 'common'])
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans pb-20 sm:pb-0">
       {/* Top Header */}
@@ -11,17 +14,17 @@ export function Layout() {
             Personal Hub
           </span>
           <span className="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded-full border border-slate-700">
-            Dev
+            {t('common:dev', { defaultValue: 'Dev' })}
           </span>
         </div>
       </header>
 
-      {/* Main Content (Área dinâmica onde as rotas renderizam) */}
+      {/* Main Content (Dynamic area where child routes are rendered) */}
       <main className="flex-1 max-w-md w-full mx-auto p-4">
         <Outlet />
       </main>
 
-      {/* Bottom Navigation Bar (Focada em Mobile) */}
+      {/* Bottom Navigation Bar (Mobile-first) */}
       <nav className="fixed bottom-0 left-0 right-0 border-t border-slate-800 bg-slate-900/90 backdrop-blur z-20">
         <div className="max-w-md mx-auto flex justify-around items-center h-16 px-2">
           <NavLink
@@ -36,7 +39,7 @@ export function Layout() {
             }
           >
             <Home className="w-5 h-5 mb-1" />
-            Início
+            {t('nav:home')}
           </NavLink>
 
           <NavLink
@@ -50,7 +53,7 @@ export function Layout() {
             }
           >
             <Dumbbell className="w-5 h-5 mb-1" />
-            Treinos
+            {t('nav:workouts')}
           </NavLink>
 
           <NavLink
@@ -64,7 +67,7 @@ export function Layout() {
             }
           >
             <Settings className="w-5 h-5 mb-1" />
-            Ajustes
+            {t('nav:settings')}
           </NavLink>
         </div>
       </nav>

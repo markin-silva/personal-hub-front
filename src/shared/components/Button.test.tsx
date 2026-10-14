@@ -4,9 +4,9 @@ import { Button } from './Button'
 
 describe('Button component', () => {
   it('should render the button with correct text', () => {
-    render(<Button>Iniciar Treino</Button>)
+    render(<Button>Start Workout</Button>)
 
-    const button = screen.getByRole('button', { name: /iniciar treino/i })
+    const button = screen.getByRole('button', { name: /start workout/i })
     expect(button).toBeInTheDocument()
   })
 
@@ -14,9 +14,9 @@ describe('Button component', () => {
     const handleClick = vi.fn()
     const user = userEvent.setup()
 
-    render(<Button onClick={handleClick}>Clique Aqui</Button>)
+    render(<Button onClick={handleClick}>Click Here</Button>)
 
-    const button = screen.getByRole('button', { name: /clique aqui/i })
+    const button = screen.getByRole('button', { name: /click here/i })
     await user.click(button)
 
     expect(handleClick).toHaveBeenCalledTimes(1)

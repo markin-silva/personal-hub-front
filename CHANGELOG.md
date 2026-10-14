@@ -16,3 +16,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Unit testing environment configured with Vitest, React Testing Library, and `jest-dom/vitest`.
   - Agent instructions guide (`AGENTS.md`), CHANGELOG, and initial ADRs in English.
   - Continuous Integration workflow via GitHub Actions.
+  - Internationalization (i18n) setup with `i18next`, `react-i18next`, and language detector, supporting English (`en`) as default and Portuguese (`pt-BR`) with `common` and `nav` namespaces, full TypeScript type safety, and ADR 0004.
