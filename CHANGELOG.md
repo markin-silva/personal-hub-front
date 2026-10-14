@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+
+## [0.2.0] - 2026-10-14
+
+### Added
+
+- Complete authentication flow (Context, Login, Register, Protected Routes, and Token Handling):
+  - JWT token auto-injection and HTTP 401 interception in `apiClient`.
+  - `AuthProvider` and `useAuth` hook managing user session, login, registration, and logout.
+  - Route guards: `ProtectedRoute` for private application routes and `GuestRoute` for auth pages.
+  - Mobile-first `LoginPage` and `RegisterPage` with pre-submit client-side inline validation, API error handling (401/422), and registration success feedback card with countdown.
+  - Logout action and user profile display in `SettingsPage`.
+  - Dedicated `auth` namespace for internationalization (`en` and `pt-BR`) including validation errors and success states.
+  - Architectural decision record `docs/decisions/0005-frontend-authentication-flow.md`.
+
 ## [0.1.0] - 2026-10-14
 
 ### Added

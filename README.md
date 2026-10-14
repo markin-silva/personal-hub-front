@@ -46,6 +46,7 @@ Internationalization is configured under `src/shared/i18n/`:
 - **Namespaces:** Split into modular domains:
   - `common`: Generic UI actions, global labels, error/loading states, and general page text.
   - `nav`: Navigation item labels.
+  - `auth`: Authentication flows (login, register, session management, and validation alerts).
 - **Language Detection:** Detects user preference automatically via `localStorage` and `navigator`, persisting selections.
 - **Type Safety:** Extended `CustomTypeOptions` ensures compile-time validation for translation keys and namespaces.
 
@@ -109,5 +110,6 @@ Ensure `VITE_API_URL` points to your active backend server instance (e.g., `http
   - [ADR 0002: Server State Management via TanStack Query](./docs/decisions/0002-server-state-with-tanstack-query.md)
   - [ADR 0003: Styling Strategy using Tailwind CSS v4](./docs/decisions/0003-styling-strategy.md)
   - [ADR 0004: Internationalization (i18n) Setup](./docs/decisions/0004-i18n-setup.md)
+  - [ADR 0005: Frontend Authentication Flow and JWT Handling](./docs/decisions/0005-frontend-authentication-flow.md)
 - **Changelog:** Track additions, changes, and fixes in [`CHANGELOG.md`](./CHANGELOG.md).
 - **Custom Skills:** Automated workflows are available under [`.codex/skills/`](./.codex/skills/) (`prepare-commit`, `generate-changelog`).
